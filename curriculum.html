@@ -20,7 +20,7 @@
             color: blue;
         }
 
-        header h4 {
+        header h2 {
             margin: 0px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -31,6 +31,43 @@
             display: flex;
             justify-content: space-between;
         }
+
+        label {
+            display: flex;
+        }
+
+        label.date {
+            float: right;
+            display: inline;
+        }
+
+        h3.jobPosition {
+            display: inline;
+        }
+
+        p.technologies {
+            display: inline;
+
+        }
+
+        label.technologies {
+            display: inline;
+
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+
+        section.techs label {
+            font-weight: bold;
+            display: inline;
+        }
+
+        section.techs p {
+            display: inline;
+        }
     </style>
 </head>
 
@@ -39,7 +76,7 @@
         <h1>
             Gabriel Rodriguez
         </h1>
-        <h4>Fullstack Developer</h4>
+        <h2>Fullstack Developer</h2>
         <div>
             <span>+54 9 11 61911875</span>
             <a href="mailto:rodriguezgabriel98@outlook.com.ar">Email</a>
@@ -62,10 +99,10 @@
         </article>
     </section>
     <section>
-        <h3>Experiencia Profesional</h3>
+        <h2>Experiencia Profesional</h2>
         <article>
-            <h4>Fullstack Developer junior</h4>
-            <label>may 23 - jun 23</label>
+            <h3 class="jobPosition">Fullstack Developer junior</h3>
+            <label class="date">may 23 - jun 23</label>
             <label>Pasantia. Marketplace "Hand to Hand"</label>
 
             <p>
@@ -79,13 +116,14 @@
                 <li> Diseñar pasarela de pagos controlada por administración</li>
             </ul>
 
-            <label>Tecnologias: </label>
-            <p>Next.js, Express, MongoDB, Firebase Auth, JWT, MercadoPago.</p>
-
+            <label class="technologies">Tecnologias: </label>
+            <p class="technologies">Next.js, Express, MongoDB, Firebase Auth, JWT, MercadoPago.</p>
+            <br>
+            <br>
         </article>
         <article>
-            <h4>Full Stack Teaching Assistant </h4>
-            <label>abr 23 - jun 23</label>
+            <h3 class="jobPosition">Full Stack Teaching Assistant </h3>
+            <label class="date">abr 23 - jun 23</label>
             <label>Experiencia académica. Henry Bootcamp</label>
 
             <p>
@@ -99,10 +137,10 @@
         </article>
     </section>
     <section>
-        <h3>Proyectos</h3>
+        <h2>Proyectos</h2>
         <article>
-            <h4>Full Stack web Developer - Foods</h4>
-            <label>abr 23 - may 23</label>
+            <h3 class="jobPosition">Full Stack web Developer - Foods</h3>
+            <label class="date">abr 23 - may 23</label>
             <label>Experiencia académica. Henry Bootcamp</label>
 
             <p>
@@ -114,14 +152,17 @@
                 <li>Crear de nuevas recetas</li>
             </ul>
 
-            <label>Tecnologias: </label>
-            <p>React, Express, PostgreSQL</p>
-
+            <label class="technologies">Tecnologias: </label>
+            <p class="technologies">React, Express, PostgreSQL</p>
+            <br>
+            <br>
             <a href="https://github.com/sumerlost/PI-Food">Repositorio - Github</a>
+            <br>
+            <br>
         </article>
         <article>
-            <h4>Python Developer - App vencimientos </h4>
-            <label>jul. 22 - mar. 23</label>
+            <h3 class="jobPosition">Python Developer - App vencimientos </h3>
+            <label class="date">jul. 22 - mar. 23</label>
             <label>Experiencia académica. UTN.BA</label>
 
             <p>
@@ -133,34 +174,40 @@
                 <li>Notificar fechas de vencimiento cercanas</li>
             </ul>
 
-            <label>Tecnologias: </label>
-            <p>SQLite, Tkinter</p>
-
+            <label class="technologies">Tecnologias: </label>
+            <p class="technologies">SQLite, Tkinter</p>
+            <br>
+            <br>
             <a href="https://github.com/sumerlost/app-vencimientos">Repositorio - Github</a>
+
         </article>
     </section>
     <section>
-        <h3>Otras experiencias</h3>
+        <h2>Otras experiencias</h2>
         <article>
-            <h4>Repositor / Encargado Ecommerce</h4>
-            <label>jun 18 - jul 22</label>
+            <h3 class="jobPosition">Repositor / Encargado Ecommerce</h3>
+            <label class="date">jun 18 - jul 22</label>
         </article>
     </section>
-    <section>
-        <h3>Tecnologias</h3>
+    <h2>Tecnologias</h2>
+    <section class="techs">
         <label>Lenguajes de Programacion: </label>
         <p> Javascript, Typescript, Python, C++, C#</p>
+        <br>
         <label>Frameworks: </label>
         <p>React, Express, Firebase, Next.js, dotnet.</p>
+        <br>
         <label>Bases De Datos: </label>
         <p> PostgreSQL, MongoDB, SQlite. </p>
+        <br>
         <label>Herramientas: </label>
         <p> Git, Jira, Slack, Docker, Azure, AWS</p>
+        <br>
         <label>Agile: </label>
         <p>SCRUM</p>
     </section>
     <section>
-        <h3>Educacion Profesional</h3>
+        <h2>Educacion Profesional</h2>
         <ul>
             <li>Full Stack Web Developer. Henry Bootcamp. 700 horas de cursado teórico-práctico. 2023.</li>
             <li>Diplomatura en python. UTN.BA. 2022 – 2023</li>
